@@ -1,0 +1,9 @@
+.App__Todo-list {
+  display:flex;         
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.Todo-list__header {
+  align-self: center;
+}

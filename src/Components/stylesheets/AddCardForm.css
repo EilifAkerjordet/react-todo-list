@@ -1,0 +1,109 @@
+.App__Todo-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: 40px;
+  width: 380px;
+  height: 150px;
+  background-color: #5E5E5E;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,1);
+  border-radius: 8px;
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.Todo-form__btn {
+  background-color:#424242;
+  border-radius:8px;
+  cursor:pointer;
+  color:#ffffff;
+  font-size:15px;
+  font-weight:bold;
+  padding:7px 25px;
+  text-decoration:none;
+  margin-bottom: 25px;
+  outline: none;
+  margin-top: 7%;
+  width: 50%;
+  align-self: center;
+}
+
+.Todo-form__btn:hover {
+  background-color:#0a0a0a;
+}
+
+.TodoForm__btn:active {
+  position:relative;
+  top:1px;
+}
+
+.Todo-form__input {
+  margin-top: 8%;
+  width: 70%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.Todo-form__input::placeholder {
+  color: transparent;
+  margin-left: 5%;
+  margin-top: 8%;
+}
+
+.Todo-form__input:placeholder-shown ~ .Todo-form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+  margin-top: 8%;
+}
+
+.Todo-form__label {
+  margin-top: 8%;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.Todo-form__input:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.Todo-form__input:focus ~ .Todo-form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+  margin-top: 8%;
+}
+
+.Todo-form__input:required, .Todo-form__input:invalid {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .App__Todo-form {
+    width: 300px;
+  }
+}
